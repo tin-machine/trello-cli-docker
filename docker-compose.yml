@@ -3,6 +3,7 @@ version: '3'
 services:
   trello-cli-docker:
     container_name: 'trello-cli-docker'
+    image: windsfromoz/trello-cli-docker
     volumes:
       - ./config.json:/root/.trello-cli/config.json
       - ./authentication.json:/root/.trello-cli/authentication.json
